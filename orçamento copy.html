@@ -1,0 +1,82 @@
+<section>
+    <h2 class=text-center> Faça já seu orçamento</h2>
+    <form method="GET" action="">
+        <fieldset>
+            <legend>Dados da viagem</legend>
+
+            <div class -="mb-3">
+                <label class="form-label" for="nome">
+                    Nome:
+                </label>
+                <Input type="text" class="form-control" name="nome" id="nome"><br><br>
+            </div>
+
+            <div class -="mb-3">
+                <label class="form-label" for="email">
+                    Email:
+                </label>
+                <input type="email" class="form-control" required name="EMAIL" id="email" placeholder="xyz@email.com">
+                <br><br>
+
+            </div>
+
+            <div class -="mb-3">
+                <label class="form-label" for="dataIda">
+                    Data de ida:
+                </label>
+
+                <input type="date" class="form-control" name="dataIda" id="dataIda"> <br><br>
+            </div>
+
+
+            <div class -="mb-3">
+                <label class="form-label" for="dataVolta">
+                    Data de volta:
+                </label>
+
+                <input type="date" class="form-control" name="dataVolta" id="dataVolta"><br><br>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Quais serviços deseja contratar?</legend>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="passagens" value="Passagens" id="compraPassagens">
+                <label class="form-check-label" for="compraPassagens">
+                    Compra de passagens
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="hospedagens" value="Hospedagem"
+                    id="reservaHospedagem">
+                <label class="form-check-label" for="reservaHospedagem">
+                    Reserva de hospedagem
+                </label>
+            </div>
+
+
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="veiculos" value="veículo" id="reservaVeiculo">
+                <label class="form-check-label" for="reservaVeiculo">
+                    Aluguel de veículos
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha o prazo para pagamento</legend>
+            <select name="prazoPagamento">
+                <option value="aVista" selected>Á vista</option>
+                <option value="5x">5 vezes sem juros</option>
+                <option value="10x">10 vezes com juros</option>
+            </select>
+        </fieldset>
+        <button class="btn btn-success">Salvar</button>
+
+
+
+    </form>
+
+</section>
